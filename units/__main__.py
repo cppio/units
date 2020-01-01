@@ -2,7 +2,10 @@ from . import *
 
 
 def run(source, target):
-    print(convert(Value.parse(source), Unit.parse(target)))
+    try:
+        print(convert(Value.parse(source), Unit.parse(target)))
+    except ValueError as err:
+        print(err)
 
 
 def main():
