@@ -2,6 +2,7 @@
 Units and Values, including conversions, in Python
 
 ## Usage Examples
+All of the conversions come from [conversions.txt](units/conversions.txt).
 ```
 $ python -m units
 convert value: 3 cm
