@@ -14,7 +14,7 @@ def load(path):
 
     for line in contents.splitlines():
         left, right = line.split("=")
-        left, right = Value.parse(left), Value.parse(right)
+        left, right = Value.parse(left.strip()), Value.parse(right.strip())
 
         ones.append(left / right)
         ones.append(right / left)
